@@ -24,6 +24,7 @@ import { NavyaModuleRoutingModule } from './navya-module/navya-module-routing.mo
 import { NavyaModuleModule } from './navya-module/navya-module.module';
 import { TokeninterceptorService } from './navya-module/services/Token-interceptor/tokeninterceptor.service';
 import { AdityaModule } from './AdityaChandra/aditya/aditya.module';
+import { NagarjunaModule } from './Nagarjuna-b/nagarjuna/nagarjuna.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,6 +51,7 @@ import { AdityaModule } from './AdityaChandra/aditya/aditya.module';
     MohammadModuleRoutingModule,
     MohammadModuleModule,
     AdityaModule,
+  
   ],
   providers: [
     {

@@ -1,0 +1,24 @@
+<p>ckeditor works!</p>
+<!-- <ckeditor [editor]="Editor" data="<p>hello,world<p>"></ckeditor> -->
+ <div class="formWrapper">
+    <mat-form-field class="example-full-width">
+      <mat-label>Title</mat-label>
+      <input matInput formcontrol="title">
+      <mat-error *ngIf="title.invalid">{{getErrorMessagetitle()}}</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Department</mat-label>
+      <select matNativeControl required formcontrol="department">
+        <option value="one">Deparment1</option>
+        <option value="two">Department2</option>    
+        <mat-error *ngIf="department.invalid">{{getErrorMessagetdepartment()}}</mat-error>   
+      </select>
+    </mat-form-field>
+    <div class="ckeditorContainer">
+   <h1>ckeditor goes here</h1>
+   <ckeditor [config]="{placeholder:'Type the content here'}"[editor]="Editor" formcontrol="content"></ckeditor>
+   <mat-error *ngIf="content.invalid && checkckeditor">{{getErrorMessagetckeditor()}}</mat-error>  
+    </div>
+    <br>
+    <button mat-stroked-button (click)="submitbuttonclicked()">submit</button>
+  </div>

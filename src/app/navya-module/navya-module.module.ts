@@ -7,7 +7,7 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { HomePageComponent } from './Components/home-page/home-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
-import { FlexLayoutModule } from '@angular/flex-layout';
+//import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from '../material.module';
 
 
@@ -25,8 +25,8 @@ import { NavyaModuleRoutingModule } from './navya-module-routing.module';
     NavyaModuleRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FlexLayoutModule,
-    MaterialModule
+   // FlexLayoutModule,
+   // MaterialModule
   ],
   providers: [
     {
